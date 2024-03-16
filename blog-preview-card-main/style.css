@@ -4,16 +4,52 @@
 --card-black: #111111;
 --card-grey: #7F7F7F;
 }
+
+.figtree-thick {
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.9rem;
+  }
+
+.figtree-date {
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.1rem;
+  }
+
+.figtree-bio {
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.3rem;
+    color: grey;
+    max-width: 80%;
+  }
+
+.figtree-learn {
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing:auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.2rem;
+  }
+
+  
+
 #main {
     background-color: var(--bg-yellow);
-
  }
  
  #card {
+    box-shadow: 10px 9px black;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-evenly;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -21,16 +57,30 @@
     background-color: var(--card-white);
     width: 29em;
     height: 40em;
-    z-index: 1;
     border: solid var(--card-black) 1px;
     border-radius: 20px;
+
  }
- 
+
 #cardHeader {
     width: 90%;
     border-radius: 20px;
     align-self: center;
     margin-top: 0.6em;
+}
+
+ #cardTitle {
+    margin-left: 1.3rem;
+ }
+
+#innerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: fit-content;
+    border: 1px solid black;
+    height: 20rem;
 }
 
 .mgLeft {margin-left: 1.6em;}
@@ -43,6 +93,7 @@
 
 .figFont {
     font-family:'Figtree', Courier, monospace;
+    font-weight: 500;
 }
 
 .learning {
@@ -50,9 +101,17 @@
     background-color: var(--bg-yellow);
     max-width: fit-content;
     border-radius: 5px;
-    font-family:'Figtree', Courier, monospace;
 }
 
+#cardFooter::before {
+    content: url("./assets/images/image-avatar.webp");
+    position: absolute;
+}
+
+
+
+
+/*
 #cardShadow {
     position: absolute;
     margin-top: 15.4%;
@@ -64,4 +123,4 @@
     border-radius: 20px;
     display: none;
 }
-
+*/
